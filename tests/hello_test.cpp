@@ -5,6 +5,37 @@
 
 #include "../src/hello.hpp"
 
-TEST_CASE( "it returns Hello World" ) {
-    REQUIRE( hello() == "Hello World!" );
-}
+TEST_CASE("cometogether function works" ) {
+
+Link item1("item1");
+    Link item2("item2");
+
+    Node node1(item1);
+    Node node2(item2);
+
+    node1.cometogether(& node2);
+
+
+
+
+
+
+
+};
+
+
+TEST_CASE("Adding new nodes") {
+    Link item1("item1");
+    Link item2("item2");
+
+
+    Node node1(item1);
+    Node node2(item2);
+
+
+    node1.cometogether(& node2);
+    node1.cometogether(& node2);
+
+};
+
+
